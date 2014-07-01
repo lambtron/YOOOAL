@@ -8,7 +8,7 @@ var express = require('express')
   , port = process.env.PORT || 3000;
 
 // Set environmental variables. ================================================
-if (!process.env.TWILIO_ASID)
+if (!process.env.YO_API_TOKEN)
   require('./config/config');
 
 // Configuration ===============================================================
