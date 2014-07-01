@@ -10,7 +10,7 @@
 
   module.exports = {
     yo: function yo () {
-      request.post(path).form({api_token: YO_API_TOKEN})
+      request.post(path).form({api_token: YO_API_TOKEN});
     }
   };
 }());
