@@ -15,8 +15,10 @@
     var pingAPI = function pingAPI () {
       Worldcup.getEvents( function (err, data) {
         if (data.length > 0 && data.indexOf('goal') > 0) {
-          Yo.yo();
-        };
+          Yo.yo(function (err, res, body) {
+            console.log(body);
+          });
+        }
       });
     };
 
