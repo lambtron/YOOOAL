@@ -15,6 +15,7 @@
     var pingAPI = function pingAPI () {
       Worldcup.getEvents( function (err, data) {
         if (data.length > 0 && data.indexOf('goal') > 0) {
+          console.log('New goal: sending Yos.');
           Yo.yo(function (err, res, body) {
             console.log(body);
           });
